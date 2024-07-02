@@ -45,7 +45,7 @@ public class LeilaoController {
 	public ModelAndView form(@PathVariable("id") Long id, Principal principal) {
 		Leilao leilao = leiloes.buscarPorId(id);
 		NovoLeilaoDto form = new NovoLeilaoDto(leilao);
-
+        System.out.println("adicao id");
 		ModelAndView mv = new ModelAndView("leilao/form");
 		mv.addObject("usuario", principal.getName());
 		mv.addObject("leilao", form);
