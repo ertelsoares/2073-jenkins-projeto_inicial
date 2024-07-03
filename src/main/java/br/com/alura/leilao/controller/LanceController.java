@@ -38,7 +38,7 @@ public class LanceController {
 		}
 
 		if (service.propoeLance(lanceDto, principal.getName())) {
-			redirectAttributes.addFlashAttribute("message", "Lance adicionado com sucesso!");
+			redirectAttributes.addFlashAttribute("message", "Lance adicionado com sucesso!!");
 		} else {
 			redirectAttributes.addFlashAttribute("error", "Lance invalido!");
 		}
